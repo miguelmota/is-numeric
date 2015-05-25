@@ -49,6 +49,8 @@ console.log(isNumeric(false)); // false
 console.log(isNumeric([])); // false
 console.log(isNumeric(function(){})); // false
 console.log(isNumeric({})); // false
+console.log(isNumeric(undefined)); // false
+console.log(isNumeric(null)); // false
 ```
 
 # Test
