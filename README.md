@@ -19,29 +19,29 @@ bower install is-numeric
 ```javascript
 var isNumeric = require('is-numeric');
 
-console.log(isNumeric(0); // true
-console.log(isNumeric(123); // true
-console.log(isNumeric(-123); // true
-console.log(isNumeric(+123); // true
-console.log(isNumeric('123'); // true
-console.log(isNumeric('-123'); // true
-console.log(isNumeric('+123'); // true
-console.log(isNumeric('.123'); // true
-console.log(isNumeric('-.123'); // true
-console.log(isNumeric('0.123'); // true
-console.log(isNumeric('-0.123'); // true
-console.log(isNumeric('1e100'); // true
-console.log(isNumeric('1e-100'); // true
-console.log(isNumeric('-1e-100'); // true
-console.log(isNumeric(Infinity); // true
-console.log(isNumeric(-Infinity); // true
-console.log(isNumeric('abc'); // false
-console.log(isNumeric('10%'); // false
-console.log(isNumeric('#10'); // false
-console.log(isNumeric('2^10'); // false
-console.log(isNumeric('2!'); // false
-console.log(isNumeric('(10)'); // false
-console.log(isNumeric('10px'); // false
+console.log(isNumeric(0)); // true
+console.log(isNumeric(123)); // true
+console.log(isNumeric(-123)); // true
+console.log(isNumeric(+123)); // true
+console.log(isNumeric('123')); // true
+console.log(isNumeric('-123')); // true
+console.log(isNumeric('+123')); // true
+console.log(isNumeric('.123')); // true
+console.log(isNumeric('-.123')); // true
+console.log(isNumeric('0.123')); // true
+console.log(isNumeric('-0.123')); // true
+console.log(isNumeric('1e100')); // true
+console.log(isNumeric('1e-100')); // true
+console.log(isNumeric('-1e-100')); // true
+console.log(isNumeric(Infinity)); // true
+console.log(isNumeric(-Infinity)); // true
+console.log(isNumeric('abc')); // false
+console.log(isNumeric('10%')); // false
+console.log(isNumeric('#10')); // false
+console.log(isNumeric('2^10')); // false
+console.log(isNumeric('2!')); // false
+console.log(isNumeric('(10)')); // false
+console.log(isNumeric('10px')); // false
 ```
 
 # Test
