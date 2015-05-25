@@ -4,12 +4,13 @@ var isNumeric = require('../is-numeric');
 test('isNumeric', function (t) {
   'use strict';
 
-  t.plan(34);
+  t.plan(35);
 
   t.equal(isNumeric(0), true);
   t.equal(isNumeric(123), true);
   t.equal(isNumeric(-123), true);
   t.equal(isNumeric(+123), true);
+  t.equal(isNumeric('0'), true);
   t.equal(isNumeric('123'), true);
   t.equal(isNumeric('-123'), true);
   t.equal(isNumeric('+123'), true);
