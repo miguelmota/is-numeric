@@ -2,7 +2,10 @@
   'use strict';
 
   function isNumeric(v) {
-    return !isNaN(v);
+    if (typeof v === 'number') return true;
+    var s = v.toString();
+    if (!s) return false;
+    return !isNaN(s);
   }
 
   if (typeof exports !== 'undefined') {
