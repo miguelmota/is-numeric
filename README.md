@@ -42,6 +42,13 @@ console.log(isNumeric('2^10')); // false
 console.log(isNumeric('2!')); // false
 console.log(isNumeric('(10)')); // false
 console.log(isNumeric('10px')); // false
+console.log(isNumeric('*')); // false
+console.log(isNumeric('')); // false
+console.log(isNumeric(true)); // false
+console.log(isNumeric(false)); // false
+console.log(isNumeric([])); // false
+console.log(isNumeric(function(){})); // false
+console.log(isNumeric({})); // false
 ```
 
 # Test
