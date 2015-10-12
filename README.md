@@ -51,6 +51,7 @@ console.log(isNumeric(function(){})); // false
 console.log(isNumeric({})); // false
 console.log(isNumeric(undefined)); // false
 console.log(isNumeric(null)); // false
+console.log(isNumeric(NaN)); // false
 ```
 
 # Test
