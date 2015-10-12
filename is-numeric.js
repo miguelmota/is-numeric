@@ -2,10 +2,10 @@
   'use strict';
 
   function isNumeric(v) {
-    if (typeof v === 'number') return true;
-    var s = (v||'').toString();
-    if (!s) return false;
-    return !isNaN(s);
+    if (typeof v === 'number' && !isNaN(v)) return true;
+    v = (v||'').toString();
+    if (!v) return false;
+    return !isNaN(v);
   }
 
   if (typeof exports !== 'undefined') {
