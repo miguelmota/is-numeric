@@ -3,7 +3,7 @@
 
   function isNumeric(v) {
     if (typeof v === 'number' && !isNaN(v)) return true;
-    v = (v||'').toString();
+    v = (v||'').toString().trim();
     if (!v) return false;
     return !isNaN(v);
   }
