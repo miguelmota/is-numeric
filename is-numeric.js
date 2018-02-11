@@ -1,9 +1,18 @@
 (function(root) {
   'use strict';
 
-  function isNumeric(v) {
+  function isNumeric(v, opts) {
+    if (!(opts instanceof Object)) {
+      opts = {
+        trim: true
+      }
+    }
     if (typeof v === 'number' && !isNaN(v)) return true;
-    v = (v||'').toString().trim();
+    v = (v||'').toString()
+    if ('trim' in opts && !opts.trim) {
+      return !/\s/.test(v)
+    }
+    v = v.trim()
     if (!v) return false;
     return !isNaN(v);
   }

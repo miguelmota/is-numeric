@@ -4,7 +4,7 @@ var isNumeric = require('../is-numeric');
 test('isNumeric', function (t) {
   'use strict';
 
-  t.plan(37);
+  t.plan(42);
 
   t.equal(isNumeric(0), true);
   t.equal(isNumeric(123), true);
@@ -43,4 +43,9 @@ test('isNumeric', function (t) {
   t.equal(isNumeric(undefined), false);
   t.equal(isNumeric(null), false);
   t.equal(isNumeric(NaN), false);
+  t.equal(isNumeric('  -3'), true);
+  t.equal(isNumeric('  -3', {trim: false}), false);
+  t.equal(isNumeric('3 ', {trim: false}), false);
+  t.equal(isNumeric('  3 ', {trim: false}), false);
+  t.equal(isNumeric(' 1e10 ', {trim: false}), false);
 });
